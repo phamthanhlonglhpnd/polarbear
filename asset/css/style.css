@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 10;
     height: var(--header-height);
     background-color: var(--primary-color);
     padding: 0 50px;
@@ -25,6 +25,7 @@
     background-size: contain;
     height: 50px;
     width: 50px;
+    border-radius: 50%;
 }
 
 .header-navbar-2{
@@ -45,7 +46,8 @@
 }
 
 .navbar-mobile__check:checked ~ .navbar-menu__short{
-    display: block;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .navbar-mobile__check:checked ~ .overlay{
@@ -54,27 +56,16 @@
 
 .navbar-menu__short{
     background-color: var(--white-color);
-    min-width: 50vw;
+    min-width: 100vw;
     border: 2px solid var(--font-color);
     border-radius: 10px;
-    display: none;
     position: absolute;
-    top: var(--header__info-height);
-    right: 0;
-    transform: translateX(110%);
-    animation: navbar-menu__shot-animation linear 0.3s forwards;
+    top: calc(var(--header__info-height)+55px);
+    right: -50px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear .5s, opacity ease .5s;
 } 
-
-@keyframes navbar-menu__shot-animation{
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 .navbar-box{
     position: relative;
@@ -176,7 +167,7 @@
 .header__logo{
     background-repeat: no-repeat;
     background-size: contain;
-    min-width: 200px;
+    width: 200px;
     height: 100%;
 }
 
@@ -185,7 +176,7 @@
     justify-content: space-between;
     list-style: none;
     align-items: center;
-    width: 80%;
+    margin: auto;
 }
 
 .home-icon{
@@ -242,10 +233,21 @@
     content: "";
     top: 15px;
     left: 0;
-    width: 60px;
     background-color: transparent;
     height: 60px;
     z-index: 1;
+}
+
+.service::after{
+    width: 70px;
+}
+
+.product::after{
+    width: 85px;
+}
+
+.project::after{
+    width: 145px;
 }
 
 .item--service:first-child, .item--product:first-child, .item--project:first-child{
@@ -258,49 +260,109 @@
     color: rgb(204, 204, 82);
 }
 
-.background-content{ 
+.background{
+    position: relative;
+}
+
+.background::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.background-image{ 
+    background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2459622712968_0fb85c1683740537924eec7eea55cd45.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     height: var(--background-content__height);
     z-index: 0;
-    position: relative;
-    
+    position: relative; 
+    animation: background-image__animation 20s infinite;
+    -webkit-animation: background-image__animation 20s infinite;
 }
 
-.background-content__body{
-    text-align: center;
-    height: 50%; 
+
+@-webkit-keyframes background-image__animation {
+        0%{
+            background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2459622712968_0fb85c1683740537924eec7eea55cd45.jpg);
+        }
+        25%{
+            background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2461446724306_a82fc6fdec8da4bda1388a13e48e5e21.jpg);
+        }
+        50%{
+            background-image: url(https://dnudecor.vn/wp-content/uploads/2021/05/z2459622602991_254143ba8e31e7af41715b821ed95f77.jpg);
+        }
+        75%{
+            background-image: url(https://dnudecor.vn/wp-content/uploads/2021/05/z2459622562763_0498e01ca65fdb8393df0cc8aa528c71.jpg);
+        }
+        100%{
+            background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2461446062375_53da0965129851173adb05daa737a0c4.jpg);
+        }
+}
+
+@keyframes background-image__animation{
+    0%{
+        background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2459622712968_0fb85c1683740537924eec7eea55cd45.jpg);
+    }
+    25%{
+        background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2461446724306_a82fc6fdec8da4bda1388a13e48e5e21.jpg);
+    }
+    50%{
+        background-image: url(https://dnudecor.vn/wp-content/uploads/2021/05/z2459622602991_254143ba8e31e7af41715b821ed95f77.jpg);
+    }
+    75%{
+        background-image: url(https://dnudecor.vn/wp-content/uploads/2021/05/z2459622562763_0498e01ca65fdb8393df0cc8aa528c71.jpg);
+    }
+    100%{
+        background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2461446062375_53da0965129851173adb05daa737a0c4.jpg);
+    }
+}
+
+.background-content{
+    text-align: center; 
     width: 100%;
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(50%, -50%);   
+    transform: translate(50%, -50%);  
+    animation: background-content__animation 5s infinite, fadeIn 3s linear;
 }
 
-.background-content:hover .brand{
-    animation: background-animation linear 2s alternate-reverse;
-}
-
-.background-content:hover .slogan{
-    animation: background-animation linear 2s alternate;
+@keyframes background-content__animation{
+    0%{
+        z-index: -1;
+        transform: translateX(50%);
+    }
+    100%{
+        z-index: 1;
+        transform: translate(50%, -50%);
+    }
 }
 
 .brand{
     color: var(--white-color);
     font-size: 8rem;
     text-transform: uppercase;  
-    padding: 50px 0;
-    position: relative;
-    
+    padding: 50px 0 30px 0;   
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .slogan{
-    padding: 50px 0;
+    padding: 20px 0;
     font-size: 6rem;
     color: var(--font-color);
-    position: relative;
     line-height: 8rem;
 }
 
@@ -590,6 +652,10 @@
     color: var(--white-color);
 }
 
+.see-more:hover{
+    opacity: 0.8;
+}
+
 .collection-content{
     position: relative;
     margin-bottom: 250px;
@@ -622,6 +688,10 @@
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.collection-box-2:hover{
+    background-color: rgba(158, 78, 47, 0.8);
 }
 
 .collection-discription{
@@ -719,14 +789,15 @@
     text-transform: uppercase;
 }
 
-.sofa-contact{
-    margin-top: 20px;
-}
 
 .sofa-contact__link{
     text-decoration: none;
     font-size: 1.8rem;
     color: var(--black-color);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--font-color);
 }
 
 .sofa__overlay{
@@ -856,6 +927,21 @@
     margin-top: 120px;
     padding-bottom: 80px;
     border-bottom: 2px solid #c3921b;
+    background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/cac-phong-cach-thiet-ke-noi-that-3-1.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer-body{
+    background-color: rgb(196, 245, 245);
+    padding: 30px 30px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 .footer-item__name {
@@ -982,7 +1068,100 @@
     margin: 12px;
 }
 
+.fuiniture-product{
+    background-image: url(https://dnudecor.vn/wp-content/uploads/2020/08/B%E1%BA%A3n_sao_c%E1%BB%A7a_Wardsdtermark-z1841381124012_244abc1af3d10a3db1719fca522997e0.jpg), linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    height: 800px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgba(149, 66, 32, 0.1);
+    position: relative;
+}
+
+.fuiniture-product__next {
+    padding: 40px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--font-color);
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.next-1{
+    top: 50%;
+    left: -30px;
+}
+.next-2{
+    top: 50%;
+    right: -30px;
+}
+
+.fuiniture-product__next-icon {
+    font-size: 2.5rem;
+    color: var(--black-color);
+    margin: -12px;
+}
 
 
+.fuiniture-product__title {
+    text-align: center;
+    padding: 50px;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--font-color);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+}
 
+.fuiniture-product__body {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.fuiniture-product__body::-webkit-scrollbar{
+    display: none;
+}
+
+.fuiniture-product__box {
+    flex-shrink: 0;
+}
+
+.fuiniture-product__image {
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 400px;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8), 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.fuiniture-product__image:hover{
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9), 0 5px 10px rgba(255, 255, 255, 0.9);
+}
+
+.fuiniture-product__detail {
+    text-align: center;
+    padding: 20px;
+    min-height: 120px;
+    margin-top: 30px;
+    border-radius: 5px;
+    /* background-image: linear-gradient(84deg, #f0da7e 0%, #b58735 47%, #c3921b 72%, #e2cc72 100%); */
+    background-image: linear-gradient(to right, rgba(149, 66, 32, 0.3), rgba(149, 66, 32, 0.9), rgba(149, 66, 32, 0.9), rgba(149, 66, 32, 0.3));
+}
+
+.fuiniture-product__detail:hover{
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.9), 0 5px 10px rgba(255, 255, 255, 0.9);
+}
+
+.fuiniture-product__name {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.fuiniture-product__price {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
 
