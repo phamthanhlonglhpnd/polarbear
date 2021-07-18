@@ -1,0 +1,97 @@
+:root{
+    --white-color: #fff;
+    --text-color: rgb(71, 71, 71);
+    --black-color: #000;
+    --font-color: #c3921b;
+    --primary-color: #464646;
+    --background-content__height: 800px;
+    --background-content__height-tablet: 400px;
+    --header-height: 130px;
+    --header__search-height: calc(var(--header-height)/2);
+    --header__info-height: calc(var(--header-height)/2);
+    --process-height: 400px;
+    --place-item-height: 400px;
+    --fuiniture-height: 600px;
+    --image-service-height: 400px;
+    --collection-image-height: 560px;
+    --introduction-image-height: 400px;
+    --experience-height: 300px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.btn{
+    border: none;
+    padding: 10px 20px;
+    background-color: #A60A0A;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: rgb(122, 122, 197);
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: fadeIn linear 0.3s;
+    display: none;
+    background-color:  rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes animation-body{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* animation: fadeIn linear 0.3s; */
+    background-color:  rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: ivory;
+}

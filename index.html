@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/resoponsive.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="header">
+            <div class="header-navbar-1 hide-on-mobile-tablet">
+                <div class="header__seacrh">
+                    <div class="header__box-search">
+                        <input type="text" id="box-search" placeholder="Search...">
+                        <i class="box-search__icon fas fa-search"></i>
+                    </div>
+                    <div class="header__box-language">
+                        <span id="language">Ngôn ngữ:</span>
+                        <a href="" id="language-select">VI</a>
+                        <span class="">/</span>
+                        <a href="" id="language-select">EN</a>
+                    </div>
+                </div>
+                <div class="header__info ">
+                    <div class="header__logo" style="background-image: url(https://26066.themes.vinawebsite.vn/wp-content/uploads/2020/02/vinahost.png);">
+                        <a class="header__logo-image" href="#"></a>
+                    </div>
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <i class="home-icon fas fa-home"></i>
+                            <a href="https://vinawebsite.vn/demo/?id=2941#" class="header-item__link">Trang chủ</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="https://vinawebsite.vn/demo/?id=2941#" class="header-item__link">Về chúng tôi</a>
+                        </li>
+
+                        <li class="header-item service">
+                            <a href="" class="header-item__link">Dịch vụ</a>
+                            <div class="header-item--service">
+                                <div class="item--service">
+                                    <a class="header-item--service-link" href="#">Thiết kế nội thất</a>
+                                </div>
+                                <div class="item--service">
+                                    <a class="header-item--service-link" href="#">Thi công nội thất</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-item product">
+                            <a href="" class="header-item__link">Sản phẩm</a>
+                            <div class="header-item--product">
+                                <div class="item--product">
+                                    <a class="header-item--product-link" href="#">Thiết bị</a>
+                                </div>
+                                <div class="item--product">
+                                    <a class="header-item--product-link" href="#">Phụ kiện</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-item project">
+                            <a href="" class="header-item__link">Dự án triển khai</a>
+                            <div class="header-item--project">
+                                <div class="item--product">
+                                    <a class="header-item--project-link" href="#">Dự án thi công</a>
+                                </div>
+                                <div class="item--product">
+                                    <a class="header-item--project-link" href="#">Dự án thiết kế</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-item">
+                            <a href="" class="header-item__link">Quy trình làm việc</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="" class="header-item__link">Tin tức </a>
+                        </li>
+                        <li class="header-item">
+                            <a href="" class="header-item__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-navbar-2">
+                <i class="header-navbar-icon fas fa-search"></i>
+                <div class="header-navbar-image" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/logo_headeer.png);"></div>
+                <div  class="navbar-box">
+                    <label for="navbar-mobile" class="header-navbar-icon fas fa-bars"></label>
+                    <input type="checkbox" class="navbar-mobile__check" id="navbar-mobile">
+                    <label for="navbar-mobile" class="overlay"></label>
+                    <div class="navbar-menu__short">
+                        <div class="navbar-menu__home">
+                            <h2 class="navbar-menu__short-name">Trang chủ</h2>
+                            <label for="navbar-mobile" class="navbar-menu__short-icon fas fa-times"></label>
+                        </div>
+                        <div class="navbar-menu__name navbar-menu__name-design">
+                            <h2 class="navbar-menu__short-name">Thiết kế nội thất</h2>
+                            <ul class="navbar-menu__list navbar-menu__list-design">
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thiết kế nội thất chung cư</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thiết kế nội thất nhà phố</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thiết kế nội thất phòng khách</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thiết kế nội thất phòng bếp</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thiết kế nội thất phòng ngủ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-menu__name navbar-menu__name-construct">
+                            <h2 class="navbar-menu__short-name">Thi công nội thất</h2>
+                            <ul class="navbar-menu__list navbar-menu__list-construct">
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thi công nội thất chung cư</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thi công nội thất nhà phố</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thi công nội thất phòng khách</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thi công nội thất phòng bếp</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Thi công nội thất phòng ngủ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-menu__name navbar-menu__name-style">
+                            <h2 class="navbar-menu__short-name">Phong cách</h2>
+                            <ul class="navbar-menu__list navbar-menu__list-style">
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Hiện đại</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Cổ điển</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Tân cổ điển</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Bắc Âu</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Mỹ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-menu__name">
+                            <h2 class="navbar-menu__short-name">Kinh nghiệm nội thất</h2>
+                            <ul class="navbar-menu__list">
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Phối cảnh 3D</a>
+                                </li>
+                                <li class="navbar-menu__item">
+                                    <a class="navbar-menu__item-link" href="">Phong Thủy nội thất</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-menu__name">
+                            <h2 class="navbar-menu__short-name">Bộ sưu tập</h2>
+                        </div>
+                        <div class="navbar-menu__name">
+                            <h2 class="navbar-menu__short-name">Dự án</h2>
+                        </div>
+                        <div class="navbar-menu__name">
+                            <h2 class="navbar-menu__short-name">Liên hệ</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        <div class="content">
+            <!--Background-->
+            <div class="background-content" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/z2459622712968_0fb85c1683740537924eec7eea55cd45.jpg);">
+                <div class="background-content__body">
+                    <h1 class="brand">Polarbear Decor</h1>
+                    <p class="slogan">Thiết kế của chúng tôi theo mong muốn của bạn</p>   
+                </div>
+            </div>
+            <!--process-->
+            <div class="process">
+                <div class="process-content">
+                    <h2 class="process-title">Quy trình làm việc</h2>
+                    <p class="process-title-body">Đội ngũ nhân viên chuyên nghiệp nhiệt tình làm việc bằng tâm nghề nghiệp với quy trình chuyên nghiệp.</p>
+                </div>
+                <div class="process-step hide-on-mobile-tablet">
+                    <div class="process-step__item">
+                        <h3 class="step">
+                            Bước 1 <br />
+                            Tư vấn - Đo đạc - Thiết kế
+                        </h3>
+                    </div>
+                    <div class="process-step__item">
+                        <h3 class="step">
+                            Bước 2 <br />
+                            Ký hợp đồng - Đo đạc - Báo giá
+                        </h3>
+                    </div>
+                    <div class="process-step__item">
+                        <h3 class="step">
+                            Bước 3 <br />
+                            Thiết kế - Thi công thực tế
+                        </h3>
+                    </div>
+                    <div class="process-step__item">
+                        <h3 class="step">
+                            Bước 4 <br />
+                            Hoàn thiện - Bàn giao công trình
+                        </h3>
+                    </div>
+                </div>
+                   
+            </div>
+            <!--place-->
+            <div class="place">
+                <div class="style-commitment">
+                    <h1 class="style-title">Uy tín luôn đặt lên hàng đầu</h1>
+                    <br/>
+                    <span id="custom">Khách hàng</span>
+                </div>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="place-item" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2021/05/z2459622602991_254143ba8e31e7af41715b821ed95f77.jpg);">
+                                <a class="place-item__link" href=""></a>
+                                <div class="place-item__box">
+                                    <h1 class="place-item__name">Hà Nội</h1>    
+                                </div>
+                                <a href="https://dnudecor.vn/wp-content/uploads/2021/05/z2459622602991_254143ba8e31e7af41715b821ed95f77.jpg"></a>
+                                <div class="place-item__overlay">
+                                    <p class="place-item__content">Thiết kế và thi công ở khu căn hộ cao cấp Vinhomes Riverside, Vinhomes Gardiena, Time City, Royal City</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <div class="place-item" style="background-image: url(https://noithattrevietnam.com/uploaded/2018/08/1-mau-nha-dep-noi-that-hien-dai-can-80m2%20%281%29.jpg);">
+                                <a class="place-item__link" href=""></a>
+                                <div class="place-item__box">
+                                    <h1 class="place-item__name">Hải Phòng</h1>    
+                                </div>
+                                <a href="https://noithattrevietnam.com/uploaded/2018/08/1-mau-nha-dep-noi-that-hien-dai-can-80m2%20%281%29.jpg"></a>
+                                <div class="place-item__overlay">
+                                    <p class="place-item__content">Thi Công các Villa và resort cao cấp tại</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <div class="place-item" style="background-image: url(https://noithatmanhhe.vn/media/20821/phong-khach-biet-thu-hien-dai-noi-that-manh-he.jpg);">
+                                <a class="place-item__link" href=""></a>
+                                <div class="place-item__box">
+                                    <h1 class="place-item__name">Thành phố Hồ Chí Minh</h1>    
+                                </div>
+                                <a href="https://noithatmanhhe.vn/media/20821/phong-khach-biet-thu-hien-dai-noi-that-manh-he.jpg"></a>
+                                <div class="place-item__overlay">
+                                    <p class="place-item__content">Thiết kế nội thất nhà phố tại các quận Tân Bình, Thủ Đức, Quận 1, Quận 2, ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6 c-12">
+                            <div class="place-item" style="background-image:url(https://acchome.vn/wp-content/uploads/2019/02/Thiet-ke-noi-that-biet-thu-nha-dep-tai-Lakeview-Villas-Binh-Duong05.jpg);">
+                                <a class="place-item__link" href=""></a>
+                                <div class="place-item__box">
+                                    <h1 class="place-item__name">Đà Nẵng</h1>    
+                                </div>
+                                <a href="https://acchome.vn/wp-content/uploads/2019/02/Thiet-ke-noi-that-biet-thu-nha-dep-tai-Lakeview-Villas-Binh-Duong05.jpg"></a>
+                                <div class="place-item__overlay">
+                                    <p class="place-item__content">Thiết kế và thi công nội thất</p>
+                                </div>
+                            </div>    
+                        </div>    
+                    </div>
+                    <div class="style-commitment">
+                        <h1 class="style-title">Các hạng mục đa dạng</h1>
+                        <br/>
+                        <span id="custom">Tổng quan</span>
+                    </div>
+                </div>    
+            </div>
+            <!--fuiniture-->
+            <div class="grid fuiniture">
+                <div class="row">
+                    <div class="fuiniture-item col l-4 m-12 c-12" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://homehome.vn/wp-content/uploads/6-mau-hinh-anh-noi-that-nha-dep-theo-phong-cach-hien-dai-2.jpg);">
+                        <div class="fuiniture-content">
+                            <h2 class="fuiniture-name">Thiết kế nội thất</h2>
+                            <ul class="fuiniture-list">
+                                <li href="" class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class="fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thiết kế nội thất chung cư</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class="fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thiết kế nội thất nhà phố</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class="fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thiết kế nội thất phòng bếp</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thiết kế nội thất phòng khách</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thiết kế nội thất phòng ngủ</a>
+                                </li>
+                            </ul>
+                            <div class="fuiniture-footer">
+                                <span class="fuiniture-brand">Polarbear Decor</span>
+                                <a class="fuiniture-btn" href="">
+                                    <i class="fuiniture-btn__icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div class="fuiniture-item col l-4 m-12 c-12" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://homehome.vn/wp-content/uploads/6-mau-hinh-anh-noi-that-nha-dep-theo-phong-cach-hien-dai-4.jpg);">
+                        <div class="fuiniture-content">
+                            <h2 class="fuiniture-name">Thi công nội thất</h2>
+                            <ul class="fuiniture-list">
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thi công nội thất chung cư</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thi công nội thất nhà phố</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thi công nội thất phòng bếp</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thi công nội thất phòng khách</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Thi công nội thất phòng ngủ</a>
+                                </li>
+                            </ul>
+                            <div class="fuiniture-footer">
+                                <span class="fuiniture-brand">Polarbear Decor</span>
+                                <a class="fuiniture-btn" href="">
+                                    <i class="fuiniture-btn__icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                
+                    <div class="fuiniture-item col l-4 m-12 c-12" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://www.kientrucvhome.com/wp-content/uploads/2020/06/69374037_1904963049648100_7716598763824873472_o.jpg);">
+                        <div class="fuiniture-content">
+                            <h2 class="fuiniture-name">Phong cách thiết kế</h2>
+                            <ul class="fuiniture-list">
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Hiện đại</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Cổ điển</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Tân cổ điển</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Bắc Âu</a>
+                                </li>
+                                <li class="fuiniture-list__item">
+                                    <a href="">
+                                        <i class=" fuiniture-list__item-icon fas fa-chevron-right"></i>
+                                    </a>
+                                    <a class="fuiniture-list__item-link" href="">Mỹ</a>
+                                </li>
+                            </ul>
+                            <div class="fuiniture-footer">
+                                <span class="fuiniture-brand">Polarbear Decor</span>
+                                <a class="fuiniture-btn" href="">
+                                    <i class="fuiniture-btn__icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--service--> 
+            <div class="service">
+                <div class="style-commitment">
+                    <h1 class="style-title">Nội thất cao cấp</h1>
+                    <br/>
+                    <span id="custom">Dịch vụ</span>
+                </div>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="box-service col l-6 m-6 c-12">
+                            <div class="image-service" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/11/thiet-ke-noi-that-chung-cu.jpg);"></div>
+                            <a href="" class="service-name">Vẽ phối cảnh 3D</a>
+                            <div class="service-discription">Polarbear Decor chuyên vẽ phối cảnh 3D cho các loại công trình, kiến trúc nhà ở, cung cấp cho bạn những bản phối cảnh 3D chất lượng cao</div>
+                            <div class="service-btn">
+                                <a href="" class="see-more">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="box-service col l-6 m-6 c-12">
+                            <div class="image-service" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/thi-cong-noi-that-nha-pho.jpg);"></div>
+                            <a href="" class="service-name">Báo giá thi công nội thất chung cư</a>
+                            <div class="service-discription">Cập nhật liên tục báo giá chi tiết dịch vụ thiết kế thi công nội thất chung cư đẹp trọn gói tại khu vực thành phố Hồ Chí Minh</div>
+                            <div class="service-btn">
+                                <a href="" class="see-more">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="box-service col l-6 m-6 c-12">
+                            <div class="image-service" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2021/04/thiet-ke-noi-that-nha-pho.jpg);"></div>
+                            <a href="" class="service-name">Báo giá thi công nội thất nhà phố trọn gói</a>
+                            <div class="service-discription">Báo giá thi công nội thất nhà phố trọn gói TPHCM chi tiết của Polarbear Decor</div>
+                            <div class="service-btn">
+                                <a href="" class="see-more">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="box-service col l-6 m-6 c-12">
+                            <div class="image-service" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/thi-cong-noi-that-chung-cu.jpg);"></div>
+                            <a href="" class="service-name">Các mẫu thiết kế nội thất chung cư hiện đại</a>
+                            <div class="service-discription">Tổng hợp các mẫu thiết kế chung cư hiện đại được ưa chuộng hiện nay</div>
+                            <div class="service-btn">
+                                <a href="" class="see-more">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="box-service col l-6 m-6 c-12">
+                            <div class="image-service" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/08/%E1%BA%A2nh-ch%E1%BB%A5p-M%C3%A0n-h%C3%ACnh-2021-07-02-l%C3%BAc-01.21.11.png);"></div>
+                            <a href="" class="service-name">Các mẫu thiết kế nhà phố hiện đại</a>
+                            <div class="service-discription">Tổng hợp các mẫu thiết kế nhà phố hiện đại được ưa chuộng hiện nay</div>
+                            <div class="service-btn">
+                                <a href="" class="see-more">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="box-service col l-6 m-6 c-12">
+                            <div class="image-service" style="background-image: url(https://www.thietkevhome.com/wp-content/uploads/2019/09/thietke.jpg);"></div>
+                            <a href="" class="service-name">Tư vấn các mẫu thiết kế</a>
+                            <div class="service-discription">Polarbear Decor cam kết tư vấn nhiệt tình, chính xác và phù hợp với nhu cầu của khách hàng</div>
+                            <div class="service-btn">
+                                <a href="" class="see-more">Xem thêm</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <!--Collection-->          
+            <div class="collection">
+                <div class="style-commitment">
+                    <h1 class="style-title">Tinh tế và sang trọng</h1>
+                    <br/>
+                    <span id="custom">Bộ sưu tập</span>
+                </div>
+                <div class="collection-content">
+                    <div class="collection-image" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/08/%E1%BA%A2nh-ch%E1%BB%A5p-M%C3%A0n-h%C3%ACnh-2021-07-02-l%C3%BAc-01.21.11.png);"></div>
+                    <div class="collection-box-1 hide-on-mobile-tablet hide-on-tablet">
+                        <div class="collection-discription">
+                            <h1 class="collection-name">Polarbear Bộ sưu tập</h1>
+                            <a href="" class="collection-link">Hương sắc Châu Âu</a>
+                        </div>
+                        <a href="" class="collection-link">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <div class="collection-box-2 l-0">
+                        <div class="collection-discription">
+                            <h1 class="collection-name">Polarbear Bộ sưu tập</h1>
+                            <a href="" class="collection-link">Hương sắc Châu Âu</a>
+                        </div>
+                        <a href="" class="collection-link__btn">
+                            <i class="collection-link-icon fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>     
+            </div>
+             <!--Commitment-->   
+            <div class="grid wide commitment">
+                <div class="row">
+                    <div class="introduction-image col l-8 m-8 c-12" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2021/05/5.jpg);"></div>
+                    <div class="introduction-content col l-4 m-4 c-12">
+                        <div class="intro">Giới thiệu</div>
+                        <h1 class="">Tinh thần Polarbear Decor</h1>
+                        <p class="style-title-content">Polarbear Decor luôn chú trọng đến trang thiết bị máy móc hiện đại, xưởng sản xuất chất lượng, sản phẩm nội thất cao cấp cùng sự chuyên môn hóa trong từng bộ phận.
+    
+                        Thêm vào đó, đội ngũ nhân lực chuyên môn cao, nhà thiết kế sáng tạo, các nhà quản lý có năng lực luôn đáp ứng mọi nhu cầu của khách hàng và đối tác. Tất cả những điều đó đã làm nên một Polarbear Decor khác biệt, một Polarbear Decor chuyên nghiệp và có thể khiến khách hàng không thể không hài lòng khi đến.</p>
+                        <div class="service-btn">
+                            <a href="" class="see-more">Xem thêm</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+            <!--sofa-->      
+            <div class="sofa-product">
+                <div class="style-commitment">
+                    <h1 class="style-title">Nội thất rời</h1>
+                    <br/>
+                    <span id="custom">Bộ sưu tập Polarbear Decor</span>
+                </div>
+                <div class="grid wide">
+                    <div class="row">    
+                            <div class="sofa col l-6 m-12 c-12">
+                                <img class="sofa-image" src="https://sofadungphat.net/wp-content/uploads/2020/10/sofa-tan-co-dien.jpg" alt="Sofa">
+                                <div class="sofa-box">
+                                    <div class="sofa-name">
+                                        <a href="" class="sofa-link">Sofa cổ điển | Venicia</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="sofa__overlay">
+                                    <div class="sofa-info">
+                                        <div class="sofa-material">
+                                            <span class="material-name">Chất liệu</span>
+                                            <p class="sofa-discription">Vải tuyết nhung và gỗ là những chất liệu đặc trưng cho dòng sofa cổ điển. Mặt ghế tuyết nhung với bề mặt lông ngắn, dày đặc, tạo cảm giác xốp, mềm. Chân sofa bằng gỗ tự nhiên.</p>
+                                        </div>
+                                        <div class="sofa-style">
+                                            <span class="style-name">Phong cách</span>
+                                            <p class="sofa-discription">VENICIA dành riêng cho dòng phong cách cổ điển. Những căn nhà được thiết kế theo phong cách cổ điển thu hút bởi cảm xúc từ màu sắc mà chúng mang lại: yên bình, sang trọng, và đậm chất hoàng gia.</p>
+                                        </div>
+                                        <div class="sofa-price">Giá: 14,365,000 VND</div>
+                                        <div class="sofa-contact">
+                                            <button class="sofa-contact__link js-buy-sofa">
+                                                Liên hệ
+                                                <i class="fas fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sofa col l-6 m-12 c-12">
+                                <img class="sofa-image" src="https://noithatxinh.vn/Images/Upload/images/21-mau-ghe-sofa-don-gian-hien-dai-dep-nhat-dang-de-mua-1.jpg" alt="Sofa">
+                                <div class="sofa-box">
+                                    <div class="sofa-name">
+                                        <a href="" class="sofa-link">Sofa hiện đại | Crystal</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="sofa__overlay">
+                                    <div class="sofa-info">
+                                        <div class="sofa-material">
+                                            <span class="material-name">Chất liệu</span>
+                                            <p class="sofa-discription">Tập trung vào công năng, sự sạch sẽ và họa tiết đơn giản. CRYSTAL đặc trưng bởi chất liệu canvas mịn, nhẹ mang đến cảm giác êm ái, thanh lịch.</p>
+                                        </div>
+                                        <div class="sofa-style">
+                                            <span class="style-name">Phong cách</span>
+                                            <p class="sofa-discription">Với đặc điểm thiết kế đơn giản, cùng đường nét khỏe khoắn, CRYSTAL phù hợp với nhiều phong cách thiết kế nội thất: tối giản, scandinavian, công nghiệp. Tuy nhiên, đây vẫn là sự lựa chọn tối ưu cho phong cách hiện đại. </p>
+                                        </div>
+                                        <div class="sofa-price">Giá: 12,450,000 VND</div>
+                                        <div class="sofa-contact">
+                                            <button class="sofa-contact__link js-buy-sofa">
+                                                Liên hệ
+                                                <i class="fas fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>     
+                    </div>
+                </div>
+            </div>
+            <!--final-->
+            <div class="final">
+                <div class="style-commitment">
+                    <h1 class="style-title">Hoạt động của Polarbear Decor</h1>
+                    <br/>
+                    <span id="custom">Tin tức</span>
+                </div>
+                <div class="grid wide">
+                    <div class="row no-gutters"> 
+                        <div class="row no-gutters col l-6 m-6 c-12">
+                            <a class="experience-total" href="#">
+                                <div class="experience special" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/xu-huong-thiet-ke-noi-that.jpg);">
+                                    <div class="experience-title">
+                                        <div class="experience-title-content">Các xu hương thiết kế nội thất mới nhất</div>
+                                        <div class="experience-title-box">
+                                            <p class="experience-content">
+                                                Bạn đang tìm kiếm một phong cách thiết kế độc đáo, mang đậm cá tính riêng cho căn hộ của mình. Tuy nhiên, bạn chưa lựa chọn được bởi có quá nhiều xu hướng thiết kế nội thất khác nhau. Và bạn cũng chưa biết phong cách nào đang “làm mưa làm gió” hiện nay.                  
+                                            </p>
+                                        </div>
+                                        <a class="experience-btn" href="">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </div>    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row no-gutters col l-6 m-6 c-12">                        
+                                <a class="experience-total col l-12 m-12 c-12" href="#">
+                                    <div class="experience" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/phong-thuy-noi-that.jpg);">
+                                        <div class="experience-title">
+                                            <div class="experience-title-content">Tất tần tật về những lưu ý phong thủy trong năm 2021</div>
+                                            <div class="experience-title-box">
+                                                <p class="experience-content">    
+                                                    Phong thủy nội thất hiện nay được rất nhiều gia chủ quan tâm bởi họ tin rằng nó có ảnh hưởng đến vận mệnh và sự phát triển của gia đình. Tuy nhiên không phải ai cũng hiểu biết về những lĩnh vực này. Bài viết dưới đây sẽ cung cấp cho bạn một số.                                 
+                                                </p>
+                                            </div>
+                                            <a class="experience-btn" href="">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </div>   
+                                    </div>
+                                </a>
+                                <a class="experience-total col l-12 m-12 c-12" href="#">
+                                    <div class="experience" style="background-image: url(https://dnudecor.vn/wp-content/uploads/2020/10/thiet-ke-nha-pho-nho-xinh.jpg);">
+                                        <div class="experience-title">    
+                                            <div class="experience-title-content">Các mẫu thiết kế hot nhất hiện nay khiến bạn phải hài lòng</div>
+                                            <div class="experience-title-box last">
+                                                <p class="experience-content">                        
+                                                    Đặc trưng của nhà phố hiện nay là diện tích nhỏ hẹp, kích thước bề ngang bị hạn chế, khiến thiết kế nhà ở bị bó buộc và mất thẩm mỹ. Điều này khiến không ít gia chủ lo lắng, loay hoay tìm cách để thiết kế nhà phố nhỏ xinh, ấn tượng vừa có.                  
+                                                </p>
+                                            </div>
+                                            <a class="experience-btn" href="">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </div>   
+                                    </div>
+                                </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>                  
+        </div>
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="footer-item col l-3 m-6 c-12">
+                        <span class="footer-item__name">Thông tin liên lạc</span>
+                        <ul class="footer-contact__list">
+                            <li class="footer-contact__item">
+                                <a class="footer-contact__item-link">
+                                    <i class="footer-contact__item-icon fas fa-location-arrow"></i>
+                                    <span class="footer-contact__item-place">Nam Cường, Nam Trực, Nam Định</span>
+                                </a>
+                            </li>
+                            <li class="footer-contact__item">
+                                <a class="footer-contact__item-link">
+                                    <i class="footer-contact__item-icon fas fa-phone"></i>
+                                    <span class="footer-contact__item-place">0366617014</span>
+                                </a>
+                            </li>
+                            <li class="footer-contact__item">
+                                <a class="footer-contact__item-link">
+                                    <i class="footer-contact__item-icon fab fa-facebook"></i>
+                                    <span class="footer-contact__item-place">Phạm Thành Long</span>
+                                </a>
+                            </li>
+                            <li class="footer-contact__item">
+                                <a class="footer-contact__item-link">
+                                    <i class="footer-contact__item-icon fas fa-envelope"></i>
+                                    <span class="footer-contact__item-place">Phamthanhlonglhpnd@gmail.com</span>
+                                </a>
+                            </li>
+                            <li class="footer-contact__item">
+                                <a class="footer-contact__item-link">
+                                    <i class="footer-contact__item-icon fab fa-instagram"></i>
+                                    <span class="footer-contact__item-place">Pham Thành Long</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                   
+                    <div class="footer-item col l-3 m-6 c-12">
+                        <span class="footer-item__name">Thông tin website</span>
+                        <ul class="footer-web__list">
+                            <li class="footer-web__item">
+                                <a class="footer-web__item-link" href="">Giới thiệu</a>
+                            </li>
+                            <li class="footer-web__item">
+                                <a class="footer-web__item-link" href="">Thiết kế nội thất</a>
+                            </li>
+                            <li class="footer-web__item">
+                                <a class="footer-web__item-link" href="">Thi công nội thất</a>
+                            </li>
+                            <li class="footer-web__item">
+                                <a class="footer-web__item-link" href="">Phong cách thiết kế</a>
+                            </li>
+                            <li class="footer-web__item">
+                                <a class="footer-web__item-link" href="">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>                    
+                    <div class="footer-item col l-3 m-6 c-12">
+                        <span class="footer-item__name">Đăng kí email</span>
+                        <p>Bạn sẽ nhận được những bài viết về phong cách thiết kế xu hướng nội thất qua email</p>
+                        <div class="footer-signup">
+                            <form action="" method="POST">
+                                <span>
+                                    <label for="email"></label>
+                                    <input type="email" name="email" class="footer-signup__input" value size="40" required="required" placeholder="Nhập email của bạn" >
+                                </span>
+                                <label for="submit"></label>
+                                <input type="submit" name="submit" class="footer-signup__send" value="Gửi" required="required" />
+                            </form>
+                        </div>
+                        <ul class="footer-signup__box">
+                            <li class="footer-signup__list">
+                                <a href="" class="footer-signup__link">
+                                    <i class="footer-signup__icon fab fa-instagram"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="footer-signup__list">
+                                <a href="" class="footer-signup__link">
+                                    <i class="footer-signup__icon fab fa-facebook-square"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="footer-signup__list">
+                                <a href="" class="footer-signup__link">
+                                    <i class="footer-signup__icon fab fa-youtube"></i>
+                                </a>
+                                
+                            </li>
+                            <li class="footer-signup__list">
+                                <a href="" class="footer-signup__link">
+                                    <i class="footer-signup__icon fab fa-pinterest"></i>
+                                </a>
+                                
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="footer-item col l-3 m-6 c-12">
+                        <span class="footer-item__name">Bản đồ Google</span>
+                    </div>   
+                </div>
+            </div>
+        </div> 
+        <div class="phone">
+            <div class="phone-box">
+                <a href="" class="phone-link">
+                    <i class="phone-icon fas fa-phone-alt"></i>
+                </a>
+            </div>
+        </div>
+        <div class="messenger">
+            <div class="messenger-box">
+                <a href="" class="messenger-link">
+                    <i class="messenger-icon fab fa-facebook-messenger"></i>
+                </a>
+            </div>
+        </div>      
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container">
+            <div class="modal-close js-modal-close">
+                <i class=" modal-close__icon fas fa-times"></i>
+            </div>
+            <div class="modal-header">
+                <i class="fas fa-couch"></i>
+                Sofa
+            </div>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="modal-label__icon fas fa-shopping-cart"></i>
+                    Sofa
+                </label>
+                <input type="text" class="modal-input">
+                <label for="" class="modal-label">
+                    <i class="modal-label__icon fas fa-shopping-cart"></i>
+                    Send to
+                </label>
+                <input type="email" class="modal-input" placeholder="Nhập email của bạn">
+                <button id="buy">Buy</button>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-help">Need <a href="" class="">help</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buySofas = document.querySelectorAll('.js-buy-sofa')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showBuySofa() {
+            modal.classList.add('open')
+        }
+
+        function hideBuySofa() {
+            modal.classList.remove('open')
+        }
+
+        for(const buySofa of buySofas){
+            buySofa.addEventListener('click', showBuySofa)
+        }
+
+        modalClose.addEventListener('click', hideBuySofa)
+    </script>
+</body>
+</html>

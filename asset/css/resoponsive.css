@@ -1,0 +1,251 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1113px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .collection-link-icon{
+        margin: 21px 0;
+    }
+    
+    .intro{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .content{
+        margin-top: var(--header-height-tablet-mobile);
+    }
+
+    .collection-link-icon{
+        margin-left: 21px;
+    }
+}
+
+/* Mobile and tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    :root{
+        --header-height-tablet-mobile: 75px;
+        --process-height-tablet-mobile: 200px;
+    }
+
+    .header{
+        height: var(--header-height-tablet-mobile);
+    }
+
+    .brand{
+        font-size: 4rem;
+    }
+
+    .slogan{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .process{
+        height: var(--process-height-tablet-mobile);
+    }
+
+    .header-navbar-2{
+        display: flex;
+    }
+
+}
+
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+
+    :root{
+        --background-content__height: 450px;
+        --place-item-height: 300px;
+        --fuiniture-height: 560px;
+        --image-service-height: 400px;
+        --collection-image-height: 460px;
+        --introduction-image-height: 350px;
+    }
+
+    .content{
+        margin-top: var(--header-height-tablet-mobile);
+    }
+
+    .brand{
+        font-size: 2.5rem;
+    }
+
+    .slogan{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .process-title{
+        font-size: 2rem;
+        padding: 46px 0;
+    }
+
+    .process-title-body{
+        line-height: 2.5rem;
+    }
+
+    .process-content{
+        height: 100%;
+    }
+
+    .style-commitment{
+        margin:0 0 20px 0;
+    }
+
+    #custom{
+        font-size: 3rem;
+    }
+
+    .place-item__name{
+        font-size: 1.5rem;
+    }
+
+    .fuiniture-name{
+        font-size: 3rem;
+    }
+
+    .fuiniture-brand{
+        font-size: 2.5rem;
+    }
+
+    .see-more{
+        font-size: 1.8rem;
+    }
+
+    .service-name{
+        font-size: 2.5rem;
+        min-height: 60px;
+    }
+
+    .experience-title-box {
+        position: absolute;
+        transform: translateY(253%);
+        left: 0;
+        right: 0;
+        line-height: 1.8rem;
+        color: var(--white-color);
+        margin: 0 20%;
+        min-height: 100px;
+        transition: transform linear 0.75s;
+    }
+
+    .service-discription{
+        padding: 15px 5px 0 5px;
+        min-height: 50px;
+        line-height: 2rem;
+    }
+
+    .collection{
+        font-size: 2rem;
+    }
+
+    .collection-name{
+        font-size: 1.5rem;
+    }
+
+    .collection-discription{
+        height: 40%;
+    }
+
+    .collection-link{
+        font-size: 2rem;
+    }
+
+    .collection-link__btn{
+        height: 50px;
+        width: 50px;
+    }
+
+    .collection-link-icon{
+        font-size: 1.8rem;
+        margin: 17px;
+    }
+
+    .collection-content{
+        margin-bottom: 100px;
+    }
+
+    .commitment{
+        margin-bottom: 25px;
+    }
+
+    .sofa-product{
+        margin-top: 25px;
+    }
+
+    .sofa-discription{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .material-name, .style-name{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .sofa-price{
+        font-size: 1.5rem;
+    }
+
+    .intro{
+        font-size: 4rem;
+        margin: 20px;
+    }
+
+    .introduction-content h1{
+        margin: 20px;
+    }
+
+    .style-title-content{
+        margin: 20px;
+    }
+
+    .experience.special{
+        height: var(--experience-height);
+    }
+
+    .experience-title-box.last{
+        transform: translateY(186%);
+    }
+
+    /* footer */
+
+    .footer{
+        margin: 80px 20px 0 20px;
+    }
+
+    .footer-item__name{
+        font-size: 1.8rem;
+    }
+
+    .footer-signup__input, .footer-signup__send{
+        height: 40px;
+    }
+
+    .phone-link, .messenger-link{
+        height: 30px;
+        width: 30px;
+    }
+
+    .phone-icon, .messenger-icon{
+        font-size: 1.6rem;
+        margin: 7px;
+    }
+
+    .phone-box{
+        right: 20px;
+        bottom: 50px;
+    }
+
+    .messenger-box{
+        right: 20px;
+        bottom: 10px;
+    }
+}
