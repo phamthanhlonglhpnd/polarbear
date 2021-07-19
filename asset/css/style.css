@@ -502,6 +502,29 @@
     position: relative;
 }
 
+.collection-image{
+    background-image: url(https://dnudecor.vn/wp-content/uploads/2020/08/%E1%BA%A2nh-ch%E1%BB%A5p-M%C3%A0n-h%C3%ACnh-2021-07-02-l%C3%BAc-01.21.11.png);
+    animation: collection-image__animation 20s infinite ;
+}
+
+@keyframes collection-image__animation{
+    0%{
+        background-image: url(https://dnudecor.vn/wp-content/uploads/2020/08/%E1%BA%A2nh-ch%E1%BB%A5p-M%C3%A0n-h%C3%ACnh-2021-07-02-l%C3%BAc-01.21.11.png);
+    }
+    25%{
+        background-image: url(https://achi.vn/wp-content/uploads/2020/12/Mau-thiet-ke-noi-that-tan-co-dien-dep-achi-01016-02-phong-khach-dep.jpg);
+    }
+    50%{
+        background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7bd5c871748143.5bcfe5174e846.jpg);
+    }
+    75%{
+        background-image: url(http://kiensang.com/thuvien/product/26-02-2018/50697_133757.jpg);
+    }
+    100%{
+        background-image: url(http://homeclassic.vn/wp-content/uploads/2014/03/PHONG-KHACH-TAN-CO-DIEN01.jpg);
+    }
+    
+}
 
 .place-item__box{
     position: absolute;
@@ -517,6 +540,7 @@
 
 .place-item__content{
     font-size: 1.8rem;
+    line-height: 1.8rem;
     color: var(--white-color);
     position: absolute;
     top: 60%;
@@ -829,7 +853,7 @@
 .sofa-discription{
     font-size: 1.8rem;
     color: var(--white-color);
-    line-height: 2rem;
+    line-height: 1.6rem;
     font-weight: 100;
 }
 
@@ -889,16 +913,6 @@
     transition: transform linear 1s;
 }
 
-/* @keyframes experience-animation{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        bottom: 0;
-    }
-} */
-
 .experience-title-content{
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -937,11 +951,15 @@
 
 .footer-body{
     background-color: rgb(196, 245, 245);
-    padding: 30px 30px;
+    padding: 40px 0 40px 0;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
+}
+
+.footer-row{
+    padding: 20px;
 }
 
 .footer-item__name {
