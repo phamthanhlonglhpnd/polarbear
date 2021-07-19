@@ -215,8 +215,23 @@
     padding: 10px 0;
 }
 
-.item--service:hover, .item--product:hover, .item--project{
+.item--service:hover, .item--product:hover, .item--project:hover{
     background-color: var(--white-color);
+}
+
+.item--service:hover .header-item--service-link{
+    color: black;
+    font-weight: 800;
+}
+
+.item--product:hover .header-item--product-link{
+    color: black;
+    font-weight: 800;
+}
+
+.item--project:hover .header-item--project-link{
+    color: black;
+    font-weight: 800;
 }
 
 .service:hover .header-item--service, .product:hover .header-item--product, .project:hover .header-item--project{
@@ -364,6 +379,7 @@
     font-size: 6rem;
     color: var(--font-color);
     line-height: 8rem;
+    font-weight: 1000;
 }
 
 
@@ -450,6 +466,7 @@
 #custom{
     font-size: 6rem;
     color: #c3921b;
+    font-weight: 1000;
 }
 
 .place-item{
